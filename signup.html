@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Rubik+Doodle+Shadow&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./main.js"></script>
+  </head>
+  <body id="signupPage">
+    <form id="create-visitor-form">
+      <div>
+        <label for="user_name">Name: </label>
+        <input
+          type="text"
+          id="user_name"
+          name="userName"
+          placeholder="Enter Name"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <div>
+          <input
+            type="submit"
+            id="submitButton"
+            class="signUpBTN"
+            value="create new user"
+          />
+        </div>
+        <div>
+          <button id="moveToLogin" class="signUpBTN">
+            login with existing user
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <script src="./signup.js"></script>
+  </body>
+</html>

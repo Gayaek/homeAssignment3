@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Short+Stack&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Rubik+Maps&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body id="animal-body">
+    <section class="top-page">
+      <nav id="animalNav" class="bar">
+        <ul class="menu-items">
+          <li id="visitor-details"></li>
+          <li id="visitorsDropDown"></li>
+          <li id="resetLocalStorage">
+            <button id="resetBTN">RESET GAME</button>
+          </li>
+          <li id="DashBoardBTN"></li>
+          <li id="resetGame">
+            <button id="logout">LOGOUT</button>
+          </li>
+          <li id="goBackToZoo">
+            <button id="goToZoo">ZOO</button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <div id="all-animal-body">
+      <div id="main-animal">
+        <div id="image">
+          <img id="animal-img" width="250px" height="250px" />
+        </div>
+        <div id="animalDetailsContainer">
+          <div>
+            <h1 id="name"></h1>
+          </div>
+          <div>
+            <p id="weight">weight:</p>
+            <p id="height">height:</p>
+            <p id="color">color:</p>
+            <p id="habitat">habitat:</p>
+            <p id="isPredator">predator:</p>
+          </div>
+        </div>
+        <div>
+          <button id="feed-animal">Feed me</button>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div id="related-section">
+        <h2>Related Animals</h2>
+        <div id="related-animals"></div>
+      </div>
+    </div>
+    <dialog id="eaten-dialog">
+      <img
+        id="ohoh"
+        src="./ohoh.png"
+        alt="gotEatenMessage"
+        width="300px"
+        height="200px"
+      />
+    </dialog>
+    <dialog id="runAway-dialog">
+      <p id="smuggled">You let the animal RUN AWAY!</p>
+    </dialog>
+    <dialog id="changeUser-dialog"></dialog>
+    <script src="./animal.js"></script>
+    <script src="./navBar.js"></script>
+  </body>
+</html>

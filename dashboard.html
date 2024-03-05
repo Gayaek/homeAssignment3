@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body id="dashboardBody">
+    <section class="top-page">
+      <nav class="bar">
+        <ul class="menu-items">
+          <li id="visitor-details"></li>
+          <li id="visitorsDropDown"></li>
+          <li id="resetLocalStorage">
+            <button id="resetBTN">RESET GAME</button>
+          </li>
+          <li id="resetGame">
+            <button id="logout">LOGOUT</button>
+          </li>
+          <li id="goBackToZoo">
+            <button id="goToZoo">ZOO</button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <div id="page">
+      <div id="visited-animals">
+        <div>
+          <h2>Animals you visited:</h2>
+        </div>
+      </div>
+      <div id="feeded-animals">
+        <div>
+          <h2>Animals you fed:</h2>
+        </div>
+      </div>
+      <div id="favorite-animal">
+        <div>
+          <h2>Favorite animal:</h2>
+        </div>
+      </div>
+    </div>
+    <dialog id="changeUser-dialog"></dialog>
+    <script src="./dashboard.js"></script>
+    <script src="./navBar.js"></script>
+  </body>
+</html>

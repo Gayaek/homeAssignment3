@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Short+Stack&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="zooPage">
+    <section class="top-page">
+      <nav class="bar">
+        <ul class="menu-items">
+          <li id="visitor-details"></li>
+          <li id="visitorsDropDown"></li>
+          <li id="resetLocalStorage">
+            <button id="resetBTN">RESET GAME</button>
+          </li>
+          <li id="resetGame">
+            <button id="logout">LOGOUT</button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <form id="animal-filter-form">
+      <div id="formBackground">
+        <div id="filterFields">
+          <div class="inputFields">
+            <label for="AnimalName">Animal Name:</label>
+            <input type="text" id="AnimalName" name="AnimalName" />
+          </div>
+          <br />
+          <div>
+            <label for="color">Animal Color: </label>
+            <select id="color" style="height: 20px">
+              <option value="All">All</option>
+              <option value="brown">Brown</option>
+              <option value="grey">Grey</option>
+            </select>
+          </div>
+          <br />
+          <div class="radioDiv">
+            <label for="risk">Predator/Not predator: </label>
+            <div>
+              <input type="radio" id="predator" name="risk" value="predator" />
+              <label for="predator">Predator</label>
+            </div>
+            <!-- <br/> -->
+            <div>
+              <input
+                type="radio"
+                id="Notpredator"
+                name="risk"
+                value="Notpredator"
+              />
+              <label for="Notpredator">Not Predator</label>
+            </div>
+          </div>
+          <br />
+          <div class="radioDiv">
+            <label for="habitat">Animal Habitat: </label>
+            <div>
+              <input type="radio" id="land" name="habitat" value="land" />
+              <label for="land">Land</label>
+            </div>
+            <!-- <br/> -->
+            <div>
+              <input type="radio" id="sea" name="habitat" value="sea" />
+              <label for="sea">Sea</label>
+            </div>
+          </div>
+          <br />
+          <div class="inputFields">
+            <label for="weight">Animal weight: </label>
+            <input type="number" id="weight" name="weight" />
+          </div>
+          <br />
+          <div class="inputFields">
+            <label for="height">Animal Height: </label>
+            <input type="number" id="height" name="height" />
+          </div>
+        </div>
+        <div id="BTNdiv">
+          <input type="submit" value="filter" id="btnFilter" />
+          <div id="btnClear"></div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div id="card-container">
+        <div id="animal-cards"></div>
+      </div>
+    </form>
+    <dialog id="changeUser-dialog"></dialog>
+    <script src="zoo.js"></script>
+    <script src="./navBar.js"></script>
+  </body>
+</html>
